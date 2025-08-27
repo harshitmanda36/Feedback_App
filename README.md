@@ -1,4 +1,3 @@
-A minimal full‑stack app where users can submit feedback and view the list.
 ## Prereqs
 - Java 17 
 - Maven 3.9+
