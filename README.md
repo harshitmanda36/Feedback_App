@@ -1,21 +1,12 @@
-# Simple Feedback App (React + Spring Boot + MySQL)
-
-A minimal full‑stack app where users can submit feedback and view the list. No Docker required.
-
+A minimal full‑stack app where users can submit feedback and view the list.
 ## Prereqs
-- Java 17 (recommended). Spring Boot 3.3 targets Java 17+. If you have Java 24 installed, switch JAVA_HOME to 17 for best compatibility.
+- Java 17 
 - Maven 3.9+
 - Node.js 18+
 - MySQL 8+ running locally
 
 ## 1) MySQL setup
-Run the SQL in `sql/setup.sql` (or create your own user/db and update `backend/src/main/resources/application.properties`):
-```sql
-CREATE DATABASE IF NOT EXISTS feedbackdb;
-CREATE USER IF NOT EXISTS 'appuser'@'localhost' IDENTIFIED BY 'apppass';
-GRANT ALL PRIVILEGES ON feedbackdb.* TO 'appuser'@'localhost';
-FLUSH PRIVILEGES;
-```
+Run the SQL 
 
 ## 2) Backend
 ```bash
